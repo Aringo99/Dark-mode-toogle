@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark mode toogle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ryan</div>
+            <div class="nav-links">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Portfolio</li></a>
+                    <a href="#"><li>Clients</li></a>
+                    <a href="#"><li>Contacts</li></a>
+                </ul>
+            </div>
+            <div>
+                <button class="toggle-button" id="switch-btn">
+                   <i class="fa-regular fa-moon" id="light-icon"></i> 
+                   <i class="fa-regular fa-sun" id="dark-icon"></i>
+                </button>
+                
+
+            </div>
+        </nav>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Hello!</h1>
+                <h2>I'm <span>Ryan Ochi,</span></h2>
+                <p>Im a web developer with 2.5years of experience working<br> with global organisations.</p>
+                <div class="action-btn">
+                <button class="action-button">Hire Me</button>
+                <button class="button-cv">Download Cv</button>
+                </div>
+
+                <div class="social-icons">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="images/developer-activity-concept-illustration.png">
+
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+
+        const toggleBtn = document.getElementById('switch-btn');
+
+        toggleBtn.addEventListener('click', function(){
+            document.body.classList.toggle('dark-mode');
+        })
+
+    </script>
+    
+</body>
+</html>

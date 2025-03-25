@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 75px;
+    align-items: center;
+    
+}
+.logo{
+    font-size: 30px;
+    width: 50px;
+}
+.dark-mode .logo{
+    color: white;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+ul li{
+    margin-left: 30px;
+    font-size: 17px;
+}
+.dark-mode ul li{
+    color: white;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+
+}
+.toggle-button{
+    padding: 5px 15px;
+    background-color: rgb(40, 40, 221);
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    padding: 20px 55px;
+    justify-content: space-between;
+}
+.header-text h1{
+    font-size: 50px;
+    font-family: 'poppins:500';
+    margin-bottom: 7px;
+}
+.dark-mode .header-text h1{
+    color: #fff;
+}
+.header-text h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.dark-mode .header-text h2{
+    color: #fff;
+}
+.header-text h2 span{
+    color: blue;
+    font-size: 50px;
+    font-weight: 800;
+}
+.header-text p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.dark-mode .header-text p{
+    color: #fff;
+}
+.action-button{
+    margin-top: 20px;
+    padding: 5px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 9px;
+}
+
+.img-container img{
+    width: 500px;
+}
+.dark-mode{
+    background-color: #080808;
+    transition: 0.5s;
+}
+.toggle-button i{
+    font-size: 20px;
+}
+.toggle-button i:last-child{
+    display: none;
+}
+.dark-mode .toggle-button i:first-child{
+    display: none;
+}
+.dark-mode .toggle-button i:last-child{
+    display: block;
+}
+.social-icons {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.social-icons i{
+    font-size: 25px;
+    color: navy;
+    margin-right: 8px;
+}
+.button-cv{
+    margin-top: 20px;
+    padding: 5px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 9px;
+    margin-left: 5px;
+}
